@@ -15,4 +15,5 @@ MIT
 
 ## Author
 
-Michael Gangolf
+Android: Michael Gangolf
+iOS: [Hans Knöchel](https://github.com/hansemannn)
