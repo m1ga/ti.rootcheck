@@ -13,28 +13,14 @@ import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.titanium.TiApplication;
 
-
 @Kroll.module(name = "TiRootCheck", id = "ti.rootcheck")
 public class TiRootCheckModule extends KrollModule {
 
-    // Standard Debugging variables
-    private static final String LCAT = "TiRootModule";
-
-    public TiRootCheckModule() {
-        super();
-    }
-
-    @Kroll.onAppCreate
-    public static void onAppCreate(TiApplication app) {
-    }
-
     // Properties
+
     @Kroll.getProperty
-    public Boolean root() {
+    public Boolean isRooted() {
         RootBeer rootBeer = new RootBeer(TiApplication.getAppCurrentActivity());
         return rootBeer.isRooted();
     }
-
-
 }
-

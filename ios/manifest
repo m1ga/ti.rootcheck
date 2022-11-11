@@ -1,0 +1,19 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: arm64 x86_64
+mac: false
+description: ti.rootcheck
+author: Hans Knöchel
+license: MIT
+copyright: Copyright (c) 2022 by Hans Knöchel
+
+# these should not be edited
+name: ti.rootcheck
+moduleid: ti.rootcheck
+guid: ba5aeb73-2468-4c54-ba69-8d7a01d9cc80
+platform: iphone
+minsdk: 9.2.0
