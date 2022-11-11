@@ -13,18 +13,14 @@ import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.titanium.TiApplication;
 
-
 @Kroll.module(name = "TiRootCheck", id = "ti.rootcheck")
 public class TiRootCheckModule extends KrollModule {
 
     // Properties
 
     @Kroll.getProperty
-    public Boolean isRouted() {
+    public Boolean isRooted() {
         RootBeer rootBeer = new RootBeer(TiApplication.getAppCurrentActivity());
         return rootBeer.isRooted();
     }
-
-
 }
-
