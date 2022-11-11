@@ -4,4 +4,4 @@ win.add(label);
 win.open();
 
 var rootCheck = require('ti.rootcheck');
-label.text = "Is rooted: " + rootCheck.root;
+label.text = "Is rooted: " + rootCheck.isRooted;
