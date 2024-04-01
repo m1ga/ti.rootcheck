@@ -4,4 +4,8 @@ win.add(label);
 win.open();
 
 var rootCheck = require('ti.rootcheck');
-label.text = "Is rooted: " + rootCheck.isRooted;
+if (OS_ANDROID) {
+    label.text = "Is rooted: " + rootCheck.isRooted()
+} else {
+    label.text = "Is rooted: " + rootCheck.isRooted
+}

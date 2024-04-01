@@ -5,8 +5,11 @@ Uses https://github.com/scottyab/rootbeer
 
 ```js
 import TiRootCheck from 'ti.rootcheck';
-
-console.log(rootCheck.isRooted);
+if (OS_ANDROID) {
+  console.log(rootCheck.isRooted());
+} else {
+  console.log(rootCheck.isRooted);
+}
 ```
 
 ## License
