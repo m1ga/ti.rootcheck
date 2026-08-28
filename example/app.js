@@ -1,11 +1,9 @@
 var win = Ti.UI.createWindow();
 var label = Ti.UI.createLabel();
+var rootCheck = require('ti.rootcheck');
 win.add(label);
 win.open();
 
-var rootCheck = require('ti.rootcheck');
-if (OS_ANDROID) {
-    label.text = "Is rooted: " + rootCheck.isRooted()
-} else {
-    label.text = "Is rooted: " + rootCheck.isRooted
-}
+win.addEventListener("open", function() {
+	label.text = "Is rooted: " + rootCheck.rooted
+});

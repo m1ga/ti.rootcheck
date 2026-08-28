@@ -18,8 +18,8 @@ public class TiRootCheckModule extends KrollModule {
 
     // Properties
 
-    @Kroll.method
-    public Boolean isRooted() {
+    @Kroll.getProperty
+    public Boolean rooted() {
         RootBeer rootBeer = new RootBeer(TiApplication.getAppRootOrCurrentActivity());
         return rootBeer.isRooted();
     }
