@@ -1,3 +1,5 @@
 build/
 android/dist/
+ios/dist/
+xcuserdata/
 .DS_STORE
